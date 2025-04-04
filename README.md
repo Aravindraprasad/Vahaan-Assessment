@@ -44,3 +44,39 @@ This key will be expired after 24h of created and its created on 4-4-2025
 
 ```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```
 
+## Limitations and Future Improvements
+- Dependency on external API (OpenRouter/Gemini)
+
+- Limited to text-based responses (no rich media)
+
+- No user authentication or session management
+
+## Future Improvements
+
+- Multi-language support
+
+- Add live agent handoff capability
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
