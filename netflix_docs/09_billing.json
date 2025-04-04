@@ -1,0 +1,9 @@
+{
+    "title": "Billing Information",
+    "content": {
+      "payment_methods": ["Credit/Debit Card", "PayPal", "Gift Cards", "Mobile Carrier Billing"],
+      "billing_cycle": "Monthly on signup date",
+      "cancellation": "Cancel anytime, access until end of billing period",
+      "refunds": "No refunds for partial months"
+    }
+  }

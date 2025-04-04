@@ -1,0 +1,7 @@
+{
+    "title": "Features",
+    "content": {
+      "key_features": ["Offline downloads", "4K HDR", "Profiles"],
+      "limits": {"downloads": "100 titles/device"}
+    }
+  }

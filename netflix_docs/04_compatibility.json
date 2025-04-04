@@ -1,0 +1,15 @@
+{
+    "title": "Device Compatibility",
+    "content": {
+      "supported_devices": [
+        {"type": "Smart TVs", "brands": ["Samsung", "LG", "Sony", "Vizio"]},
+        {"type": "Streaming Devices", "brands": ["Roku", "Fire TV", "Apple TV", "Chromecast"]},
+        {"type": "Mobile", "brands": ["iOS", "Android"]},
+        {"type": "Gaming Consoles", "brands": ["PlayStation", "Xbox"]}
+      ],
+      "minimum_requirements": {
+        "internet": "5 Mbps for HD, 15 Mbps for 4K",
+        "browser": "Chrome, Firefox, Safari, or Edge (latest versions)"
+      }
+    }
+  }

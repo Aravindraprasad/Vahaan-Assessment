@@ -1,0 +1,17 @@
+{
+    "title": "Streaming Quality",
+    "content": {
+      "resolutions": [
+        {"quality": "SD", "plans": ["Basic"]},
+        {"quality": "HD (1080p)", "plans": ["Standard"]},
+        {"quality": "Ultra HD (4K)", "plans": ["Premium"]}
+      ],
+      "audio": ["Stereo", "5.1 Surround Sound", "Dolby Atmos (select titles)"],
+      "data_usage": {
+        "low": "0.3 GB per hour",
+        "medium": "0.7 GB per hour",
+        "high": "3 GB per hour",
+        "ultra": "7 GB per hour"
+      }
+    }
+  }

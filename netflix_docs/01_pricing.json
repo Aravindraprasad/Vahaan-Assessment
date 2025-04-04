@@ -1,0 +1,10 @@
+{
+    "title": "Pricing Plans",
+    "content": {
+      "plans": [
+        {"name": "Basic", "price": "$9.99", "screens": 1, "resolution": "SD"},
+        {"name": "Standard", "price": "$15.99", "screens": 2, "resolution": "HD"}
+      ],
+      "discounts": ["15% off annual billing"]
+    }
+  }

@@ -1,0 +1,13 @@
+
+{
+    "title": "Contact Support",
+    "content": {
+      "support_hours": "24/7 customer service",
+      "channels": [
+        {"type": "Chat", "availability": "+91 9538065463"},
+        {"type": "Phone", "availability": "8am-11pm +91-9538065463"},
+        {"type": "Email", "availability": " aravindraprasad16@gmail.com Response within 24 hours"}
+      ],
+      "help_center": "Self-service support at help.netflix.com"
+    }
+  }

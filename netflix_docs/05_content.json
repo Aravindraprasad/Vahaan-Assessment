@@ -1,0 +1,9 @@
+{
+    "title": "Content Library",
+    "content": {
+      "categories": ["Movies", "TV Shows", "Documentaries", "Netflix Originals", "Kids"],
+      "exclusives": ["Stranger Things", "The Crown", "Bridgerton"],
+      "recent_additions": "Updated monthly",
+      "download_policy": "Selected titles available for offline viewing"
+    }
+  }

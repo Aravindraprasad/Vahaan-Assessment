@@ -1,0 +1,262 @@
+/* static/css/style.css */
+:root {
+    --netflix-red: #E50914;
+    --netflix-black: #141414;
+    --netflix-dark: #222;
+    --netflix-gray: #303030;
+    --netflix-light: #E5E5E5;
+}
+
+body {
+    background-color: var(--netflix-black);
+    color: var(--netflix-light);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.card {
+    background-color: var(--netflix-gray);
+    color: white;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-container {
+    height: 400px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Chat floating button */
+.chat-float-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--netflix-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.2s ease;
+}
+
+.chat-float-button:hover {
+    transform: scale(1.05);
+}
+
+.chat-float-button img {
+    width: 70px;
+    height: 70px;
+}
+
+/* Chat modal */
+.chat-modal {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    display: none;
+    flex-direction: column;
+    z-index: 1001;
+    overflow: hidden;
+}
+
+.chat-header {
+    padding: 15px;
+    background-color: var(--netflix-red);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.chat-body {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-message, .bot-message {
+    margin-bottom: 15px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    align-self: flex-end;
+}
+
+.bot-message {
+    align-self: flex-start;
+}
+
+.message-content {
+    padding: 10px 15px;
+    border-radius: 18px;
+}
+
+.user-message .message-content {
+    background-color: var(--netflix-red);
+    color: white;
+    border-radius: 18px 18px 0 18px;
+}
+
+.bot-message .message-content {
+    background-color: #e0e0e0;
+    color: black;
+    border-radius: 18px 18px 18px 0;
+}
+
+.chat-footer {
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+#userMessage {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+#sendMessage {
+    background-color: var(--netflix-red);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* Suggested questions */
+.suggested-questions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.suggested-question-btn {
+    background-color: #e0e0e0;
+    border: none;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 16px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.suggested-question-btn:hover {
+    background-color: #d0d0d0;
+}
+
+/* Rating container */
+.rating-container {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.rating-text {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.rating-stars {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.star {
+    color: #ccc;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star:hover, .star.active {
+    color: gold;
+}
+
+.message-content strong {
+    font-weight: bold;
+}
+
+.message-content ul {
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+.message-content li {
+    margin-bottom: 3px;
+}
+
+/* Add these styles to your style.css file */
+.message-content h2 {
+    font-size: 1.3rem;
+    margin: 10px 0 8px;
+    font-weight: bold;
+    color: var(--netflix-red);
+}
+
+.message-content h3 {
+    font-size: 1.1rem;
+    margin: 8px 0 6px;
+    font-weight: bold;
+}
+
+.message-content p {
+    margin: 6px 0;
+}
+
+.message-content ul {
+    margin: 8px 0;
+    padding-left: 20px;
+}
+
+.message-content li {
+    margin-bottom: 4px;
+    list-style-type: disc;
+}
+
+.bot-message .message-content {
+    background-color: #e0e0e0;
+    color: black;
+    border-radius: 18px 18px 18px 0;
+    padding: 12px 16px;
+}

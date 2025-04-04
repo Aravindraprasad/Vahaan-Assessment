@@ -1,0 +1,9 @@
+{
+    "title": "Terms of Service",
+    "content": {
+      "account_sharing": "Intended for household use only",
+      "prohibited_actions": ["Password sharing outside household", "VPN usage to access other regions"],
+      "content_usage": "Viewing rights only, no downloading or redistribution",
+      "termination_policy": "Netflix may terminate accounts for Terms violations"
+    }
+  }

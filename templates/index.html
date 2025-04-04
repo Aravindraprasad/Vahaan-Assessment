@@ -1,0 +1,87 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Support</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="{{ url_for('static', filename='img/Netflix-logo.png') }}" alt="Netflix" height="70">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <h1 class="text-center mb-4">Featured Movies & Shows</h1>
+        
+        <div class="row">
+            {% for movie in movies %}
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-img-container">
+                        <img src="{{ url_for('static', filename='img/placeholders/' + movie.image) }}" class="card-img-top" alt="{{ movie.title }}">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ movie.title }}</h5>
+                        <p class="card-text">{{ movie.description }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+
+    <!-- ChatBot Float Button -->
+    <div class="chat-float-button" id="chatFloatButton">
+        <img src="{{ url_for('static', filename='img/bot.png') }}" alt="Chat Support">
+    </div>
+
+    <!-- ChatBot Modal -->
+    <div class="chat-modal" id="chatModal">
+        <div class="chat-header">
+            <h5>NetBot Support</h5>
+            <button id="closeChat" class="close-button">&times;</button>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <div class="bot-message">
+                <div class="message-content">
+                    Welcome to Netflix Support! How can I help you today?
+                </div>
+            </div>
+            
+            <!-- Suggested Questions -->
+            <div class="suggested-questions">
+                {% for question in suggested_questions %}
+                <button class="suggested-question-btn">{{ question }}</button>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="userMessage" placeholder="Type your question...">
+            <button id="sendMessage">Send</button>
+        </div>
+        
+        <!-- Rating UI -->
+        <div class="rating-container" id="ratingContainer" style="display: none;">
+            <div class="rating-text">Rate this response:</div>
+            <div class="rating-stars">
+                <span class="star" data-rating="1">★</span>
+                <span class="star" data-rating="2">★</span>
+                <span class="star" data-rating="3">★</span>
+                <span class="star" data-rating="4">★</span>
+                <span class="star" data-rating="5">★</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>
