@@ -1,9 +1,9 @@
 
-#Overview
+# Overview
 
 This is a Netflix support chatbot that helps users with common questions about Netflix services, including pricing, troubleshooting, account management, and content information. The chatbot uses the OpenRouter API to access Google's Gemini model for generating responses based on Netflix documentation.
 
-**Note: API key will be expired after 24h & API created on 4-4-25**
+**Note: API key will be expired after 24h & API created on 05-04-25 on 1:42AM**
 ## Screenshots
 
 Home page
