@@ -13,8 +13,8 @@ Chat-bot with pre-defined question:
 ![image](https://github.com/user-attachments/assets/bc9a488b-b4b1-4eaf-a7ba-937eb9bdf8ab)
 
 Interaction with chat-both with templates and custome question
-![image](https://github.com/user-attachments/assets/55eb61ff-4293-48f7-8967-166045214f43)
 
+![image](https://github.com/user-attachments/assets/55eb61ff-4293-48f7-8967-166045214f43)
 ![image](https://github.com/user-attachments/assets/42cc50ef-85d1-4091-8056-7c0d37e34c0c)
 
 
