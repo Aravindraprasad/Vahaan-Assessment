@@ -8,7 +8,7 @@ from datetime import datetime
 from flask import Flask, render_template, request, jsonify
 
 # Configuration
-OPENROUTER_API_KEY = "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"  
+OPENROUTER_API_KEY = "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"  
 DOCS_DIR = "netflix_docs"
 ANALYTICS_FILE = "analytics.csv"
 
